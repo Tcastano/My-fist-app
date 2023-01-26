@@ -1,0 +1,20 @@
+
+
+
+<p>{{contadorEstado}}</p>
+
+<app-counter *ngFor="let counter of counters"></app-counter>
+
+<!-- <label for="">Nombre Contador</label>
+    <input type="text" (input)="onUpdateCounterName($event)"> -->
+    
+    <br>
+    <br>
+    
+    
+    <label for="">Nombre Contador</label>
+    <input type="text" [(ngModel)]="nombreContador">
+    <p>{{nombreContador}}</p>
+    
+    <button class="btn btn-info" [disabled]="!permitirAnadir" (click)="onCreateCounters()"><p [innerText]="permitirAnadir"></p></button>
+

@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My-fist-app';
+  title = 'Mi app';
+  name ='Hugo'
+  clicks:Date[] = [];
+
+  displayClickDate(){
+    this.clicks.push(new Date());
+  }
 }
+
